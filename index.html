@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
-    <title>Wordle</title>
+    <title>Code Lingo</title>
 </head>
 
 <body>
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn">CLICK FOR INSTRUCTIONS</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Instructions</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>You have six tries to guess the five-letter word of the day.</p>
+        <p>Type in your guess and submit your word.</p>
+        <p>The color of the tiles will change after you submit your word.</p>
+        <p>Continue until you solve the word or run out of guesses.</p>
+      </div>
+      <div class="modal-footer">
+        <h3>Good Luck!</h3>
+      </div>
+    </div>
+  
+  </div>
+
     <div class="header">
-        <h1 class="header-text">Wordle</h1>
+        <h1 class="header-text">Code Lingo</h1>
     </div>
 
     <hr>
@@ -26,61 +52,62 @@
 
             <div class="grid-row-1">
 
-                <div class="row1-block-1"></div>
-                <div class="row1-block-1"></div>
-                <div class="row1-block-1"></div>
-                <div class="row1-block-1"></div>
-                <div class="row1-block-1"></div>
+                <div class="row1-block-1 square"></div>
+                <div class="row1-block-2 row1-block-1 square"></div>
+                <div class="row1-block-3 row1-block-1 square"></div>
+                <div class="row1-block-4 row1-block-1 square"></div>
+                <div class="row1-block-5 row1-block-1 square"></div>
 
             </div>
 
             <div class="grid-row-2">
 
-                <div class="row2-block-2"></div>
-                <div class="row2-block-2"></div>
-                <div class="row2-block-2"></div>
-                <div class="row2-block-2"></div>
-                <div class="row2-block-2"></div>
+                <div class="row2-block-1 square"></div>
+                <div class="row2-block-2 row2-block-1 square"></div>
+                <div class="row2-block-3 row2-block-1 square"></div>
+                <div class="row2-block-4 row2-block-1 square"></div>
+                <div class="row2-block-5 row2-block-1 square"></div>
 
             </div>
 
             <div class="grid-row-3">
 
-                <div class="row3-block-3"></div>
-                <div class="row3-block-3"></div>
-                <div class="row3-block-3"></div>
-                <div class="row3-block-3"></div>
-                <div class="row3-block-3"></div>
+                <div class="row3-block-1 square"></div>
+                <div class="row3-block-3 row3-block-1 square"></div>
+                <div class="row3-block-4 row3-block-1 square"></div>
+                <div class="row3-block-5 row3-block-1 square"></div>
+                <div class="row3-block-6 row3-block-1 square"></div>
+                
 
             </div>
 
             <div class="grid-row-4">
 
-                <div class="row4-block-4"></div>
-                <div class="row4-block-4"></div>
-                <div class="row4-block-4"></div>
-                <div class="row4-block-4"></div>
-                <div class="row4-block-4"></div>
+                <div class="row4-block-1 row4-block-1 square"></div>
+                <div class="row4-block-2 row4-block-1 square"></div>
+                <div class="row4-block-3 row4-block-1 square"></div>
+                <div class="row4-block-4 row4-block-1 square"></div>
+                <div class="row4-block-5 row4-block-1 square"></div>
 
             </div>
 
             <div class="grid-row-5">
 
-                <div class="row5-block-5"></div>
-                <div class="row5-block-5"></div>
-                <div class="row5-block-5"></div>
-                <div class="row5-block-5"></div>
-                <div class="row5-block-5"></div>
+                <div class="row5-block-1 row5-block-1 square"></div>
+                <div class="row5-block-2 row5-block-1 square"></div>
+                <div class="row5-block-3 row5-block-1 square"></div>
+                <div class="row5-block-4 row5-block-1 square"></div>
+                <div class="row5-block-5 row5-block-1 square"></div>
 
             </div>
 
             <div class="grid-row-6">
 
-                <div class="row6-block-6"></div>
-                <div class="row6-block-6"></div>
-                <div class="row6-block-6"></div>
-                <div class="row6-block-6"></div>
-                <div class="row6-block-6"></div>
+                <div class="row6-block-1 square"></div>
+                <div class="row6-block-2 row6-block-1 square"></div>
+                <div class="row6-block-3 row6-block-1 square"></div>
+                <div class="row6-block-4 row6-block-1 square"></div>
+                <div class="row6-block-5 row6-block-1 square"></div>
 
             </div>
 
@@ -138,6 +165,8 @@
 
     
 </div>
-<script type="text/javascript" src="index.js"></script>
+    
+
+<script src="index.js"></script>
 </body>
 </html>
